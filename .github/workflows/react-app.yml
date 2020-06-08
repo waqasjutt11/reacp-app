@@ -28,8 +28,8 @@ jobs:
       with:
         cmd: install # will run `yarn install` command
     - name: build yarn
-      run: yarn build
+      run: sudo yarn build
     - name: installsurge
       run: sudo npm install --global surge
     - name: Deploythesurge
-      run: sudo surge ./build waqas-first-react2020.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: sudo surge ./build waqas-first-react2050.surge.sh --token ${{ secrets.SURGE_TOKEN }}
